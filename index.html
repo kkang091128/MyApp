@@ -179,10 +179,10 @@
 
         function forecast(foreData){
             
-            $(".forecast li:eq(0) .f_icon").html(`<img src='http://openweathermap.org/img/wn/${foreData.list[0].weather[0].icon}.png'>`);
-            $(".forecast li:eq(1) .f_icon").html(`<img src='http://openweathermap.org/img/wn/${foreData.list[3].weather[0].icon}.png'>`);
-            $(".forecast li:eq(2) .f_icon").html(`<img src='http://openweathermap.org/img/wn/${foreData.list[6].weather[0].icon}.png'>`);
-            $(".forecast li:eq(3) .f_icon").html(`<img src='http://openweathermap.org/img/wn/${foreData.list[9].weather[0].icon}.png'>`);
+            $(".forecast li:eq(0) .f_icon").html(`<img src='https://openweathermap.org/img/wn/${foreData.list[0].weather[0].icon}.png'>`);
+            $(".forecast li:eq(1) .f_icon").html(`<img src='https://openweathermap.org/img/wn/${foreData.list[3].weather[0].icon}.png'>`);
+            $(".forecast li:eq(2) .f_icon").html(`<img src='https://openweathermap.org/img/wn/${foreData.list[6].weather[0].icon}.png'>`);
+            $(".forecast li:eq(3) .f_icon").html(`<img src='https://openweathermap.org/img/wn/${foreData.list[9].weather[0].icon}.png'>`);
 
             var foreTime1 = new Date(foreData.list[0].dt*1000);
             var foreTime2 = new Date(foreData.list[3].dt*1000);
@@ -203,7 +203,7 @@
             var todayWeater = data.name + " " + 
                               data.weather[0].main + 
                               " 온도 : " + data.main.temp + "℃" + 
-                              `<img src='http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>`;
+                              `<img src='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>`;
 
             var todaytime = new Date(data.dt*1000);
             
@@ -213,7 +213,7 @@
             // $(".weather").html(todayWeater);
             // $(".time").html(print_time);
             $(".name").html(data.name); //도시이름
-            $(".icon").html(`<img src='http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>`);
+            $(".icon").html(`<img src='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>`);
             $(".main").html(data.weather[0].main); //clear
             $(".temp").html(data.main.temp + " ℃");
         }
